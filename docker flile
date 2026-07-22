@@ -1,0 +1,5 @@
+FROM openjdk:21
+WORKDIR /ex
+COPY . /ex
+RUN javac Hello.java
+CMD [ "java","Hello" ]
